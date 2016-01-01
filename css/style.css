@@ -17,6 +17,12 @@ h2{
   margin-bottom: 5px;
 }
 
+h1{
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+}
+
 p{
   font-size: 16px;
   line-height: 19px;
