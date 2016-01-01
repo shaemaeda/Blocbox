@@ -17,7 +17,7 @@ h2{
   margin-bottom: 5px;
 }
 
-h1{
+.animated-fade-in{
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
