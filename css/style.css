@@ -79,6 +79,13 @@ p{
     }
   }
 
+  /*Assignment 30 TV media*/
+  @media tv (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+
   /* HEADER */
    header {
      color:#FFFFFF;
