@@ -269,9 +269,20 @@ p{
  .testimonials h2 {
    color:#3498DB;
  }
- .testimonials ul li {
-   list-style-type: none;
+
+.testimonials ul li {
+  list-style-type: none;
  }
+
+ .testimonials ul li.move-down {
+  list-style-type: none;
+  margin-top: 20px;
+ }
+
+
+
+
+
  .testimonials blockquote {
    color:#FFFFFF;
    text-align: left;
