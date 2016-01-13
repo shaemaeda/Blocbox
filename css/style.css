@@ -18,7 +18,7 @@ h2{
 }
 
 /* animated Fade-in h1 !!need help!! */ 
-.container h1 animated fadeIn{
+.container h1 .animated-fadeIn{
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 2s;
@@ -80,10 +80,21 @@ p{
     }
   }
 
+  /* for footer adjustment to smaller monitors */
+   @media (min-width: 380px) {
+    footer {
+      width: 400px;
+      height: 248px;
+    }
+  }
+
   /*Assignment 30 TV media*/
-  @media tv (min-width: 1200px) {
-    .container {
-      width: 1170px;
+  @media tv (min-width: 2560px) {
+    h1{
+  font-size: 60px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
     }
   }
 
@@ -274,7 +285,12 @@ p{
   list-style-type: none;
  }
 
- .testimonials ul li.move-down {
+ .testimonials ul > li.move-down {
+  list-style-type: none;
+  margin-top: 20px;
+ }
+
+.testimonials ul > li.move-down2 {
   list-style-type: none;
   margin-top: 20px;
  }
@@ -324,6 +340,24 @@ p{
    margin-top: 30px;
  }
 
+ /* LAST CALL */
+ .last {
+  text-align: center;
+ }
+
+ .last h2 {
+  color: #3498DB;
+ }
+
+ .last p {
+  margin-bottom: 50px;
+ }
+
+.last a {
+  margin: 30px 0px;
+
+ }
+
   /* FOOTER */
  footer {
    background-color: #34495E;
@@ -334,6 +368,7 @@ p{
    position: relative;
    overflow: hidden;
    z-index: 0;
+   margin-top: 50px;
  }
  footer p, footer nav ul {
    font-size:14px;
@@ -374,5 +409,16 @@ p{
    }
    footer .logo{
      padding: 2em 0 2em 1.5em;
+   }
+
+   /* this media tag should be for smaller monitors..but applies to all monitors
+   @media (min-width: 380px) {
+    footer {
+      width: 400px;
+      height: 248px;
+
+    } */
+
+
    }
  }
